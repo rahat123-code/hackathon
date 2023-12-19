@@ -1,0 +1,33 @@
+.flex {
+    background-color: antiquewhite;
+    border: 5px solid black;
+    display: flex;
+    margin: 9px;
+    padding: 2px;
+    /* height: 1000px; Remove or set to auto */
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    padding:8px;
+    margin:9px;
+}
+
+#box1 {
+    background-color: aqua;
+}
+
+#box2 {
+    background-color: rgb(142, 190, 11);
+}
+
+#box3 {
+    background-color: rgb(255, 0, 119);
+}
+@media (max-width:800px) {
+    .flex{
+        flex-direction: column-reverse;
+    }
+}

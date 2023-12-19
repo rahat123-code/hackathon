@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 20px;
+            padding: 10px;
+            background-color: lightgray;
+            width: fit-content; /* Set the width based on content */
+            max-width: 100%; /* Limit the maximum width to the viewport width */
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            margin: 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* Apply styles for screens with a maximum width of 600px */
+            .box {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
